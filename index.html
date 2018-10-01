@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dosis|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Fresh portfolio</title>
+    <style>
+        /* Style the buttons */
+
+
+        /* Style the active class, and buttons on mouse-over */
+
+        .active {
+            text-decoration: none;
+            padding-right: 80px;
+            color: lightcoral
+        }
+
+        .active .hover {
+            opacity: 1;
+
+        }
+
+        .active .normal {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="burger">
+
+            <div class="burger-container" onclick="myFunction(this)">
+
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul id="menu">
+                    <a class="menuTag" href="#">
+                        <li>Home</li>
+                    </a>
+                    <a class="menuTag" href="#">
+                        <li>About me</li>
+                    </a>
+
+                    <a class="menuTag" href="#">
+                        <li>Contact</li>
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="kadrvamenu">
+        <div id="home-images">
+            <h1 id="welcom">Welcome to my digital design<br> and business experiences</h1>
+            <img id="desk" src="images/miz3%20(1).png" alt="desk-lamp">
+            <img id="buble" src="images/icons.png" alt="icons-buble">
+            <img id="pc" src="images/pc2.png" alt="pc">
+        </div>
+        <div id="myDIV-container">
+
+            <div id="myDIV" class="">
+                <div class="vl"></div>
+
+                <a class="btn active hoverable" href="#stas" style="padding-top: 4em;margin-top: 66px"><span class="normal">S</span><span
+                        class="hover">Stas project </span></a>
+
+                <a class="btn hoverable" href="#restaurant"><span class="normal">R</span><span class="hover">Restaurant</span></a>
+                <a class="btn  hoverable" href="#curriculum"><span class="normal">C</span><span class="hover">
+                        Curriculum</span></a>
+                <a class="btn hoverable" href="#interactive"><span class="normal">A</span><span class="hover">Animations</span></a>
+                <a class="btn hoverable" style="margin-bottom: 6%" href="#normade"><span class="normal" style="margin-left: -22px;">N</span><span
+                        class="hover">Normade</span></a>
+                <div class="scroll-link" onclick="mySecondFunction()">
+                    <div id="rectangle"></div>
+                    <div class="arr">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid" width="20" height="64" viewBox="0 0 20 64">
+                            <path d="M0.790,56.905 L10.030,63.877 L19.270,56.905 " transform="translate(0.25)" class="cls-1" />
+                            <path class="path" d="M10,0 L10,63" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--mydiv-container-->
+    </div>
+    <section id="section10" class="intro">
+
+        <a href="#stas"><span id="scroll-Span"></span></a>
+    </section>
+    <section class="projects docScroller">
+
+
+        <!-- PR1-->
+        <div id="stas" class="pj container ">
+            <div class="text-img-wrapper " style="">
+                <span id="letter">S</span>
+                <a href="stas.html" target="_blank"> <img class="img-fluid animation-element slide-left image " src="images/-screenshotstat.png"></a>
+                <div id="second-container" class="">
+                    <h3 class=" ">Stas music</h3>
+                    <p>bla bla ba aboute stat.bla bla ba aboute stat</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- PR2-->
+        <div id="restaurant" class="pj container ">
+            <div class="text-img-wrapper " style="">
+                <span id="letter">R</span>
+                <a href="restaurant.html"><img class="img-fluid animation-element slide-left " src="images/Rusisk.png"></a>
+                <div id="second-container" class="">
+                    <h3 class=" ">Restaurant</h3>
+                    <p>bla bla ba aboute stat.bla bla ba aboute stat</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- PR3-->
+        <div id="curriculum" class="pj container ">
+            <div class="text-img-wrapper " style="">
+                <span id="letter">C</span>
+                <a href="school-curriculum.html"><img class="img-fluid animation-element slide-left" src="images/keaScreenshot%202018-07-30%2018.12.png"></a>
+                <div id="second-container" class="">
+                    <h3 class=" ">School curriculum</h3>
+                    <p>bla bla ba aboute stat.bla bla ba aboute stat</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- PR4-->
+        <div id="interactive" class="pj container ">
+            <div class="text-img-wrapper " style="">
+                <span id="letter">A</span>
+                <a href="animation.html"><img class="img-fluid animation-element slide-left" src="images/familyguy13.50%20copy%202.jpg"></a>
+            </div>
+            <div id="second-container" class="">
+                <h3 class=" ">Interactive Animation</h3>
+                <p>bla bla ba aboute stat.bla bla ba aboute stat</p>
+            </div>
+
+
+        </div>
+
+
+        <!-- PR5-->
+        <div id="normade" class="pj container ">
+            <div class="text-img-wrapper " style="">
+                <span id="letter" style="color: black">N</span>
+                <a href="normade.html"><img class="img-fluid animation-element slide-left " src="images/normade.png"></a>
+                <div id="second-container" class="">
+                    <h3 class=" ">Normade Company</h3>
+                    <p>bla bla ba aboute stat.bla bla ba aboute stat</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
+
+        var linear = new SmoothScroll('[data-easing="linear"]', {
+            easing: 'linear'
+        });
+    </script>
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+
+    <script>
+        var button = document.querySelector(".burger-container");
+        var menutag = document.querySelector(".menuTag");
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+            document.getElementById("menu").classList.toggle("reveal");
+
+            menutag.classList.add()
+        };
+    </script>
+    <script>
+        // When the user scrolls down 600px from the top of the document, show the vertical menu
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                document.getElementById("myDIV").style.display = "block";
+
+            } else {
+                document.getElementById("myDIV").style.display = "none";
+
+            }
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+
+                document.getElementById("home-images").style.opacity = 0;
+                document.getElementById("scroll-Span").style.opacity = 0;
+            } else {
+
+                document.getElementById("home-images").style.opacity = 1;
+                document.getElementById("scroll-Span").style.opacity = 1;
+            }
+
+
+
+        }
+    </script>
+    <!--scroll down button in first page-->
+    <script>
+        $(function () {
+            $('a[href*=#]').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+            });
+        });
+    </script>
+
+    <!--ANIMATION-->
+
+    <script>
+        $(window).scroll(function () {
+            $('.animation-element').each(function () {
+                var imagePos = $(this).offset().top;
+                var imageHeight = $(this).height();
+                var topOfWindow = $(window).scrollTop();
+
+                if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+                    $(this).addClass("in-view");
+                } else {
+                    $(this).removeClass("in-view");
+                }
+            });
+        });
+    </script>
+    <!--scroll down button in other pages-->
+    <script>
+        function mySecondFunction() {
+            var body = document.body; // For Safari
+            var html = document.documentElement; // Chrome, Firefox, IE and Opera places the overflow at the html level, unless else is specified. Therefore, we use the documentElement property for these browsers
+
+            body.scrollTop += 900;
+
+            html.scrollTop += 900;
+
+        }
+    </script>
+
+    <!--Assign active class to nav links while scrolling-->
+    <script>
+
+        $(window).scroll(function () {
+            var scrollDistance = $(window).scrollTop() + 400;
+
+            // Assign active class to nav links while scolling
+            $('.pj').each(function (i) {
+                if ($(this).position().top <= scrollDistance) {
+                    $('#myDIV a.active').removeClass('active');
+                    $('#myDIV a').eq(i).addClass('active');
+                }
+            });
+        }).scroll();
+    </script>
+
+
+    <!--scroll snap points-->
+
+    <!--
+    <script>
+    
+    var scrollTimerHandle = "";
+
+$(".projects").scroll(function() {
+    
+    
+var newScrollPosition = parseInt(this.scrollTop / 910) * 910,
+    _this = this;
+
+    clearInterval(scrollTimerHandle);
+    console.log("hiiii");
+scrollTimerHandle  = setTimeout(function() {
+   _this.scrollTop = newScrollPosition ;
+
+}, 1000);
+
+
+});
+    </script>
+-->
+    <script src="myscript.js"></script>
+</body>
+
+</html>
