@@ -9,7 +9,6 @@ body {
     #dde3ff
   );
 }
-
 .btn {
   border: none;
   color: gray;
@@ -20,7 +19,6 @@ body {
   text-decoration: none;
   font-family: "Abril Fatface", cursive;
 }
-
 #letter {
   font-family: "Abril Fatface", cursive;
   font-style: italic;
@@ -29,7 +27,6 @@ body {
   color: white;
   z-index: 6;
 }
-
 #myDIV {
   width: 28vw;
   height: 100%;
@@ -46,7 +43,6 @@ body {
   height: 100%;
   top: 5%;
   right: 0;
-
   position: fixed;
   z-index: 1;
 }
@@ -54,71 +50,55 @@ body {
   color: lightcoral;
   padding-right: 80px;
 }
-
 .active {
   text-decoration: none;
   padding-right: 80px;
   color: lightcoral;
 }
-
 .active .hover {
   opacity: 1;
 }
-
 .active .normal {
   display: none;
 }
-
 #burger {
   position: fixed;
   width: 100vw;
   z-index: 9;
   margin-top: 5px;
 }
-
-/*-----changing text on hover-----*/
-
+/* -----changing text on hover----- */
 .hoverable .hover {
   opacity: 0;
 }
-
 .hoverable:hover .normal {
   display: none;
 }
-
 .hoverable:hover .hover {
   opacity: 1;
   transition: opacity 0.7s;
 }
-
-/*-----changing text on hover ends-----*/
-
+/* -----changing text on hover ends----- */
 */ .wrapper {
   margin-left: 140px;
 }
-
 .animation {
   width: 60%;
   height: 60%;
   margin: 0 -9% 0 -9%;
 }
-
 .interanim {
   margin-top: 10%;
   display: flex;
-
   justify-content: center;
 }
-
-/*-----burgermenu-------*/
-
+/* -----burgermenu------- */
 .burger-container {
   display: inline-block;
   cursor: pointer;
   margin-left: 70%;
   margin-top: 10px;
 }
-
 .burger-container:hover .bar1 {
   padding-top: 1px;
 }
@@ -129,7 +109,6 @@ body {
 .burger-container:hover .bar3 {
   padding-top: 1px;
 }
-
 .bar1,
 .bar2,
 .bar3 {
@@ -141,49 +120,39 @@ body {
   z-index: 10;
   position: relative;
 }
-
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-4px, 4px);
 }
-
 .change .bar1 :hover {
   padding: 0;
 }
 .change .bar2 {
   opacity: 0;
 }
-
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-7px, -8px);
 }
-
 #menu {
   position: absolute;
   width: 100vw;
   margin: -100px 0 0 -70%;
   padding: 30px;
   padding-top: 125px;
-
   background: #ededed;
   list-style-type: none;
-
   transform-origin: 100% 100%;
   transform: translate(100%, 0);
-
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-
   z-index: 2;
   display: grid;
   justify-content: center;
   text-align: center;
 }
-
 .reveal {
   transform: none !important;
 }
-
 #menu li {
   padding: 10px 0;
   font-size: 22px;
@@ -208,55 +177,44 @@ body {
   -webkit-transform: scale(1, 0.5) translate(0, 20px);
   transform: scale(1, 0.5) translate(0, 20px);
 }
-
 #menu a:hover::before {
   opacity: 1;
   -webkit-transform: scale(1, 1) translate(0, 0);
   transform: scale(1, 1) translate(0, 0);
 }
-
 #menu a {
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-
   position: relative;
   color: black;
   padding: 0 5em 0 5em;
 }
-/*-----burgermenu ends-------*/
-
-/*
-.intro,
+/* -----burgermenu ends------- */
+/* .intro,
 .pj {
     height: 400px
-}
-*/
-
+} */
 nav a {
   color: black;
 }
-
 #kadr {
   display: block;
   position: fixed;
 }
-
 .pj .heding {
   position: absolute;
 }
 .pj p {
-  /* position: absolute;*/
+  /* position: absolute; */
   display: none;
 }
-
 .container img {
   cursor: zoom-in;
 }
-
-/*scrolldownBUTTON*/
+/* scrolldownBUTTON */
 #section10 a,
 #section10 a span {
   display: none;
@@ -284,7 +242,7 @@ nav a {
   height: 6px;
   margin-left: -3px;
   background-color: #e00f0f;
-  /*  border-radius: 100%;*/
+  border-radius: 100%;
   -webkit-animation: sdb10 2s infinite;
   animation: sdb10 2s infinite;
   box-sizing: border-box;
@@ -321,25 +279,20 @@ nav a {
     opacity: 0;
   }
 }
-/*scrolldownBUTTON ENDS*/
-
+/* scrolldownBUTTON ENDS */
 #second-container p {
   font-family: "Crimson Text", serif;
   font-size: 20px;
 }
-
 #second-container {
   position: absolute;
 }
-
 #second-container h3 {
   font-family: "Dosis", sans-serif;
 }
-
 #letter {
   display: none;
 }
-
 #home-images {
   margin: 0 0 0 -14%;
   transition: all 0.2s;
@@ -367,25 +320,19 @@ nav a {
   margin: 9.5% 0 0 61%;
   display: none;
 }
-
 .projects {
   margin-top: 30%;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 3000px;
 }
-
-/*------MEDIAQUERRIES-----*/
-
+/* ------MEDIAQUERRIES----- */
 @media (min-width: 576px) {
   #menu {
     margin: -100px 0 0 -80%;
   }
-
   .burger-container {
     margin-left: 80%;
   }
-
   #buble {
     margin: 50px 0 0 38%;
   }
@@ -395,7 +342,6 @@ nav a {
     font-size: 27px;
   }
 }
-
 @media (min-width: 768px) {
   .projects {
     margin-top: 10%;
@@ -409,7 +355,6 @@ nav a {
     width: 50%;
     animation: jumping 0.5s;
   }
-
   #pc {
     margin: 24.5% 0 0 64%;
     animation: jumpingme 1s ease-out;
@@ -420,11 +365,9 @@ nav a {
     margin: 13% 0 0 49%;
     display: none;
   }
-
   .buble-pop {
     animation: popson 0.3s;
   }
-
   @keyframes popson {
     0% {
       transform: scale(0.1);
@@ -441,13 +384,11 @@ nav a {
     stroke-dasharray: 50;
     animation: dash 11s linear infinite;
   }
-
   @keyframes dash {
     to {
       stroke-dashoffset: -800;
     }
   }
-
   .scroll-link {
     position: absolute;
     width: 68px;
@@ -481,7 +422,6 @@ nav a {
     position: absolute;
     bottom: 0;
   }
-
   .scroll-link .arr {
     -webkit-transition: all 0.3s cubic-bezier(0.21, 0.51, 0.51, 1);
     transition: all 0.3s cubic-bezier(0.21, 0.51, 0.51, 1);
@@ -497,24 +437,21 @@ nav a {
     height: 100px;
     position: absolute;
     left: 33%;
-
     top: 10px;
   }
   #myDIV {
     opacity: 1;
     align-items: center;
   }
-
   .container img {
     padding: 10% 12% 0 20%;
     position: absolute;
     cursor: zoom-in;
   }
-
   .pj p {
     display: block;
   }
-  /*-----text-animation-slide up-----*/
+  /* -----text-animation-slide up----- */
   .animation-element.slide-up {
     opacity: 0;
     visibility: visible;
@@ -528,7 +465,6 @@ nav a {
     -ms-transform: translate(0px, -10px);
     transform: translate3d(0px, -10px, 0px);
   }
-
   .animation-element.slide-up.in-view {
     opacity: 1;
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -537,7 +473,7 @@ nav a {
     -ms-transform: translate(0px, 0px);
     transform: translate3d(0px, 0px, 0px);
   }
-  /*-----img-animation-slide left-----*/
+  /* -----img-animation-slide left----- */
   .element-to-hide {
     visibility: hidden;
   }
@@ -562,7 +498,6 @@ nav a {
     -ms-transform: translate(0px, 0px);
     transform: translate3d(0px, 0px, 0px);
   }
-
   #kadrvamenu {
     width: 90vw;
     height: 70vh;
@@ -577,7 +512,6 @@ nav a {
     z-index: 5;
     max-width: 800px;
   }
-
   .intro,
   .pj {
     height: 900px;
@@ -599,7 +533,6 @@ nav a {
     display: block;
     top: 80%;
   }
-
   #second-container {
     padding: 27em 0 0 3em;
   }
@@ -609,7 +542,6 @@ nav a {
     margin-left: -4%;
     display: block;
   }
-
   @keyframes jumping {
     0% {
       transform: translate(0, 200px);
@@ -620,7 +552,6 @@ nav a {
       opacity: 1;
     }
   }
-
   @keyframes jumpingme {
     0% {
       transform: translate(0, -1000px);
@@ -632,12 +563,10 @@ nav a {
     }
   }
 }
-
 @media (min-width: 992px) {
   .scroll-link {
     left: 27%;
   }
-
   .container img {
     padding: 9em 0 0 31em;
     margin-left: -25em;
@@ -653,7 +582,6 @@ nav a {
   #home-images {
     margin: -8% 0 0 -14%;
   }
-
   #home-images h1 {
     margin: 46% 0 0 20%;
     font-size: 35px;
@@ -662,33 +590,27 @@ nav a {
     left: 36%;
   }
 }
-
 @media (min-width: 1200px) {
   .scroll-link {
     left: 32%;
   }
-
   .container img {
     padding: 10em 0 0 25em;
     max-width: 958px;
     margin-left: -15em;
   }
-
   .burger-container {
     margin-left: 90%;
   }
-
   .interanim {
     margin-top: 6%;
   }
-
   #myDIV {
     top: 5%;
   }
   #second-container {
     padding: 30em 0 0 10em;
   }
-
   #letter {
     font-size: 24em;
     padding-top: 0.3%;
@@ -697,7 +619,6 @@ nav a {
   #section10 a span {
     top: 84%;
   }
-
   #home-images h1 {
     margin: 38% 0 0 20%;
   }
