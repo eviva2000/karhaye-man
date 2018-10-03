@@ -1,0 +1,66 @@
+body {
+  overflow: hidden;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid green;
+  background-color: #384395;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  animation: loading 1s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes loading {
+  to {
+    opacity: 1;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 12%;
+  height: 6%;
+  border-radius: 25px;
+  background-color: #3f559e;
+  color: white;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 1px solid grey;
+}
+
+.btn:hover {
+  background-color: white;
+  font-family: "Dosis", sans-serif;
+  color: #3f559e;
+}
+
+#projects {
+  margin-left: 30%;
+}
+
+.contain {
+  display: flex;
+  margin-left: 47%;
+}
+
+@media (min-width: 1200px) {
+  img {
+    margin-top: -1%;
+  }
+  .contain {
+    margin-top: 0;
+  }
+}
