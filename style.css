@@ -10,7 +10,6 @@ body {
     #dde3ff
   );
 }
-
 .btn {
   border: none;
   color: gray;
@@ -210,7 +209,6 @@ nav a {
   position: absolute;
 }
 .pj p {
-  /* position: absolute; */
   display: none;
 }
 .container img {
@@ -228,11 +226,11 @@ nav a {
   background-color: #b8a8a8;
   width: 50px;
   height: 50px;
-  top: 80%;
+  top: 82.5%;
   left: 50%;
   position: absolute;
   border-radius: 50%;
-  animation: waving 3s ease-out infinite ;
+  animation: waving 3s ease-out infinite;
   opacity: 0.5;
 }
 @keyframes waving {
@@ -246,7 +244,7 @@ nav a {
   top: 70%;
   left: 50%;
   width: 30px;
-  height: 50px;
+  height: 30px;
   margin-left: 10px;
   border: 2px solid #fff;
   border-radius: 50px;
@@ -268,14 +266,12 @@ nav a {
 }
 @-webkit-keyframes sdb10 {
   0% {
-    -webkit-transform: translate(0, 0);
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   80% {
-    -webkit-transform: translate(0, 20px);
     opacity: 0;
   }
   100% {
@@ -284,14 +280,12 @@ nav a {
 }
 @keyframes sdb10 {
   0% {
-    transform: translate(0, 0);
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   80% {
-    transform: translate(0, 20px);
     opacity: 0;
   }
   100% {
@@ -347,6 +341,12 @@ nav a {
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
 }
+.image {
+  opacity: 0.5;
+}
+.image :hover {
+  opacity: 1;
+}
 /* ------MEDIAQUERRIES----- */
 @media (min-width: 576px) {
   #menu {
@@ -373,12 +373,12 @@ nav a {
     display: block;
   }
   #desk {
-    margin: 10% 0 0 57%;
+    margin: 9% 0 0 57%;
     width: 50%;
     animation: jumping 0.5s;
   }
   #pc {
-    margin: 24.5% 0 0 64%;
+    margin: 23.2% 0 0 64%;
     animation: jumpingme 1s ease-out;
   }
   #buble {
@@ -399,7 +399,7 @@ nav a {
     }
   }
   #home-images h1 {
-    margin: 38% 0 0 20%;
+    margin: 29% 0 0 20%;
     animation: jumping 0.5s;
   }
   .path {
@@ -520,6 +520,9 @@ nav a {
     -ms-transform: translate(0px, 0px);
     transform: translate3d(0px, 0px, 0px);
   }
+  .animation-element.slide-left.in-view:hover {
+    opacity: 0.5;
+  }
   #kadrvamenu {
     width: 90vw;
     height: 70vh;
@@ -539,51 +542,51 @@ nav a {
     height: 100vh;
     scroll-snap-align: start;
   }
-  /* .container {
+}
+/* .container {
     height: 100vh;
   } */
-  .burger-container {
-    margin-left: 80%;
+.burger-container {
+  margin-left: 80%;
+}
+#menu {
+  margin: -100px 0 0 -80%;
+}
+#kadr {
+  display: none;
+}
+#section10 a,
+#section10 a span {
+  display: block;
+  top: 84%;
+}
+#second-container {
+  padding: 27em 0 0 3em;
+}
+#letter {
+  font-size: 18em;
+  padding-top: 9%;
+  margin-left: -4%;
+  display: block;
+}
+@keyframes jumping {
+  0% {
+    transform: translate(0, 200px);
+    opacity: 0;
   }
-  #menu {
-    margin: -100px 0 0 -80%;
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
   }
-  #kadr {
-    display: none;
+}
+@keyframes jumpingme {
+  0% {
+    transform: translate(0, -1000px);
+    opacity: 0;
   }
-  #section10 a,
-  #section10 a span {
-    display: block;
-    top: 80%;
-  }
-  #second-container {
-    padding: 27em 0 0 3em;
-  }
-  #letter {
-    font-size: 18em;
-    padding-top: 9%;
-    margin-left: -4%;
-    display: block;
-  }
-  @keyframes jumping {
-    0% {
-      transform: translate(0, 200px);
-      opacity: 0;
-    }
-    100% {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-  }
-  @keyframes jumpingme {
-    0% {
-      transform: translate(0, -1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
 @media (min-width: 992px) {
@@ -606,21 +609,23 @@ nav a {
     margin: -8% 0 0 -14%;
   }
   #home-images h1 {
-    margin: 46% 0 0 20%;
+    margin: 37% 0 0 20%;
     font-size: 35px;
   }
   .vl {
     left: 36%;
   }
-  .bg-span,#section10 a span {
+  .bg-span,
+  #section10 a span {
     top: 85%;
+  }
 }
 @media (min-width: 1200px) {
   .scroll-link {
     left: 32%;
   }
   .container img {
-    padding: 10em 0 0 25em;
+    padding: 8em 0 0 25em;
     max-width: 958px;
     margin-left: -15em;
   }
@@ -634,11 +639,12 @@ nav a {
     top: 5%;
   }
   #second-container {
-    padding: 30em 0 0 10em;
+    padding: 28em 0 0 10em;
   }
   #letter {
-    font-size: 24em;
-    padding-top: 0.3%;
+    font-size: 23em;
+    padding-top: 1%;
+    margin-left: 0;
   }
   #section10 a,
   #section10 a span {
@@ -652,5 +658,8 @@ nav a {
   }
   .vl {
     left: 39%;
+  }
+  #home-images h1 {
+    margin: 35% 0 0 20%;
   }
 }
