@@ -27,6 +27,7 @@ body {
   position: absolute;
   color: white;
   z-index: 6;
+  display: none;
 }
 #myDIV {
   width: 28vw;
@@ -139,8 +140,7 @@ body {
   position: absolute;
   width: 100vw;
   margin: -100px 0 0 -70%;
-  padding: 30px;
-  padding-top: 125px;
+  padding: 9em 0 7em 0em;
   background: #ededed;
   list-style-type: none;
   transform-origin: 100% 100%;
@@ -242,9 +242,9 @@ nav a {
 #section10 a span {
   position: absolute;
   top: 70%;
-  left: 50%;
-  width: 30px;
-  height: 30px;
+  left: 47%;
+  width: 34px;
+  height: 34px;
   margin-left: 10px;
   border: 2px solid #fff;
   border-radius: 50px;
@@ -252,7 +252,7 @@ nav a {
 }
 #section10 a span::before {
   position: absolute;
-  top: 10px;
+  top: 12px;
   left: 50%;
   content: "";
   width: 6px;
@@ -294,7 +294,7 @@ nav a {
 }
 /* scrolldownBUTTON ENDS */
 #second-container p {
-  font-family: "Crimson Text", serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
 }
 #second-container {
@@ -302,9 +302,6 @@ nav a {
 }
 #second-container h3 {
   font-family: "Dosis", sans-serif;
-}
-#letter {
-  display: none;
 }
 #home-images {
   margin: 0 0 0 -14%;
@@ -347,6 +344,9 @@ nav a {
 .image :hover {
   opacity: 1;
 }
+.dontdisplay {
+  display: none;
+}
 /* ------MEDIAQUERRIES----- */
 @media (min-width: 576px) {
   #menu {
@@ -373,8 +373,8 @@ nav a {
     display: block;
   }
   #desk {
-    margin: 9% 0 0 57%;
-    width: 50%;
+    margin: 10.8% 0 0 45%;
+    width: 62%;
     animation: jumping 0.5s;
   }
   #pc {
@@ -543,9 +543,6 @@ nav a {
     scroll-snap-align: start;
   }
 }
-/* .container {
-    height: 100vh;
-  } */
 .burger-container {
   margin-left: 80%;
 }
@@ -567,7 +564,6 @@ nav a {
   font-size: 18em;
   padding-top: 9%;
   margin-left: -4%;
-  display: block;
 }
 @keyframes jumping {
   0% {
@@ -604,6 +600,7 @@ nav a {
   #letter {
     font-size: 21em;
     padding-top: 4%;
+    display: block;
   }
   #home-images {
     margin: -8% 0 0 -14%;

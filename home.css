@@ -12,11 +12,15 @@ body {
 img {
   width: 100%;
   height: auto;
-  margin-top: 10%;
+
   animation: loading 1s ease-in forwards;
   opacity: 0;
 }
-
+svg {
+  animation: loading 1s ease-in forwards;
+  opacity: 0;
+  margin-top: 10%;
+}
 @keyframes loading {
   to {
     opacity: 1;
@@ -39,6 +43,7 @@ a {
   justify-content: center;
   position: absolute;
   border: 1px solid grey;
+  transition: all 0.3s;
 }
 
 .btn:hover {
@@ -55,35 +60,13 @@ a {
   display: flex;
   margin-left: 47%;
 }
-
-.track {
-  stroke: grey;
-}
-
-.marker {
-  motion-path: path(
-    "M466.7,289.9c-62,0-112.5-50.5-112.5-112.5c0-62,50.5-112.5,112.5-112.5s112.5,50.5,112.5,112.5
-  C579.2,239.5,528.7,289.9,466.7,289.9z M466.7,65.5c-61.7,0-112,50.2-112,112c0,61.7,50.2,112,112,112s112-50.2,112-112
-  C578.7,115.7,528.5,65.5,466.7,65.5z"
-  );
-  offset-path: path(
-    "M466.7,289.9c-62,0-112.5-50.5-112.5-112.5c0-62,50.5-112.5,112.5-112.5s112.5,50.5,112.5,112.5
-  C579.2,239.5,528.7,289.9,466.7,289.9z M466.7,65.5c-61.7,0-112,50.2-112,112c0,61.7,50.2,112,112,112s112-50.2,112-112
-  C578.7,115.7,528.5,65.5,466.7,65.5z"
-  );
-  animation: move 13s linear infinite;
-}
-
-@keyframes move {
-  100% {
-    motion-offset: 100%;
-    offset-distance: 100%;
-  }
+.cls-1 {
+  fill: #868686;
 }
 
 @media (min-width: 1200px) {
-  img {
-    margin-top: -1%;
+  svg {
+    margin-top: -0.5%;
   }
   .contain {
     margin-top: 0;

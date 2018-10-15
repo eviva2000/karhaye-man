@@ -6,136 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dosis|Oswald" rel="stylesheet">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="aboutme.css">
     <title>My story</title>
-    <style>
-        body {
-
-            margin: 0;
-            font-family: "Dosis", sans-serif;
-
-        }
-
-        .img-bg {
-            width: 260px;
-            height: 260px;
-            border: 9px solid rgba(255, 68, 0, 0.685);
-            border-radius: 50%;
-            margin-top: 3%
-        }
-
-        h2 {
-            color: white
-        }
-
-        h3,
-            {
-            /* text-align: center; */
-            font-weight: 300
-        }
-
-        h4 {
-            /* font-family: "Crimson Text", serif; */
-            text-align: center;
-            font-weight: 100;
-        }
-
-        .unicod {
-            color: grey
-        }
-
-        .unicod2 {
-            color: #384395;
-            font-size: 20px
-        }
-
-        .wrapper {
-            width: 100vw;
-            height: 70vh;
-            background-color: #384395;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center
-        }
-
-
-
-        .traits {
-            display: flex;
-            justify-content: space-around;
-            width: 80vw;
-            margin-top: 8%;
-
-        }
-
-        img {
-            width: 4vw;
-            height: 4vw;
-            margin: 2%
-        }
-
-        .title {
-            text-align: center;
-            color: #384395
-        }
-
-        hr {
-            display: block;
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
-            margin-left: 5em;
-            margin-right: 5em;
-            border-width: 1px;
-        }
-
-
-
-        p {
-            text-align: justify;
-            margin: 1.5em;
-
-
-        }
-
-
-        .img-wrapper {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: "edu edu box""work work box";
-            margin: 5%
-        }
-
-        .box {
-            grid-area: box;
-            /* width: 15%;
-            height: 40%; */
-            border: 3px solid #384395;
-            border-radius: 10px;
-            margin-top: 6%;
-        }
-
-        #work {
-            grid-area: work;
-            margin-top: 5%
-        }
-
-        #education {
-            grid-area: edu
-        }
-
-        .specialty-wrapper {
-            display: flex;
-            justify-content: center;
-            margin-top: 20%
-        }
-    </style>
 </head>
 
 <body>
+
+    <header>
+        <div id="burger">
+
+            <div class="burger-container" onclick="myFunction(this)">
+
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul id="menu">
+                    <a class="menuTag" href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a class="menuTag" href="projects.html">
+                        <li>Projects</li>
+                    </a>
+
+                    <a class="menuTag" href="contact.html">
+                        <li>Contact</li>
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+        <img style="width:40px;height:auto ;position: absolute;margin: 1%" src="images/logo5.png">
+
+    </header>
     <section class="wrapper">
         <div class="img-bg">
         </div>
+        <h1 class="my-name">Elahe Arjomandi</h1>
+
+
         <div class="traits">
             <h2><span class="unicod">&#9679; </span>Reliable</h2>
             <h2><span class="unicod">&#9679; </span>Committed</h2>
@@ -192,6 +107,10 @@
             </div>
         </section>
     </article>
+    <footer>
+        <img style="width:38vw; height:auto" src="images/contact.png">
+    </footer>
+    <script src="myscript.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,5 @@
 let buble = document.querySelector("#buble");
 let image = document.querySelector(".image");
-setTimeout(function() {
-  // document.getElementById("buble").style.display = "block";
-  // buble.classList.add("buble-pop");
-  console.log("i m working");
-}, 1000);
 
 image.addEventListener("click", doThis);
 
@@ -55,9 +50,9 @@ function mySecondFunction() {
   var body = document.body; // For Safari
   var html = document.documentElement; // Chrome, Firefox, IE and Opera places the overflow at the html level, unless else is specified. Therefore, we use the documentElement property for these browsers
 
-  body.scrollTop += 720;
+  body.scrollTop += 700;
 
-  html.scrollTop += 720;
+  html.scrollTop += 700;
 }
 
 // scroll down button in first page-->
