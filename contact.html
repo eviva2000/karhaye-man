@@ -5,11 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Contact</title>
+    <style>
+        body {
+            background-color: #384395
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin: 11em 8em 0 1em;
+            grid-gap: 1em;
+            position: absolute
+        }
+
+        #email,
+        #linkedin,
+        #fb {
+            width: 4em;
+            padding-left: 70%;
+            padding-top: 5%;
+        }
+
+        #email {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        #linkedin {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #fb {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        #email1 {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        #linkedin1 {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        #fb1 {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        p {
+            font-size: 1.6em
+        }
+    </style>
 </head>
 
 <body>
 
+    <header>
+        <div id="burger">
+
+            <div class="burger-container" onclick="myFunction(this)">
+
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul id="menu">
+                    <a class="menuTag" href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a class="menuTag" href="projects.html">
+                        <li>Projects</li>
+                    </a>
+
+                    <a class="menuTag" href="aboutme.html">
+                        <li>My story</li>
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+        <img style="width:40px;height:auto ;position: absolute;margin: 1%" src="images/logo5.png">
+
+    </header>
+
+    <main>
+        <p id="email1">Arjomandielaheh@gmail.com</p>
+        <p id="linkedin1">https://www.linkedin.com/in/elaheharjomandi/</p>
+        <p id="fb1">https://www.facebook.com/elaheh.arjomandi</p>
+
+        <img id="email" src="images/email.png" alt="email">
+        <img id="linkedin" src="images/linkedin.png" alt="linkedin">
+        <img id="fb" src="images/facebook.png" alt="fb">
+
+    </main>
+    <script src="js/myscript.js"></script>
 </body>
 
 </html>

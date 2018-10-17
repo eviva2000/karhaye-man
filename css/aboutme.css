@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: "Dosis", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .img-bg {
@@ -67,12 +69,6 @@ h4 {
   display: none;
 }
 
-img {
-  width: 4vw;
-  height: 4vw;
-  margin: 2%;
-}
-
 .title {
   text-align: center;
   color: #384395;
@@ -93,7 +89,7 @@ p {
 }
 
 .img-wrapper {
-  display: grid;
+  display: block;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "edu edu box" "work work box";
   margin: 5%;
@@ -127,6 +123,13 @@ p {
     transform: translate(0, 0);
     opacity: 1;
   }
+}
+
+#work img,
+#education img {
+  width: 100vw;
+  height: auto;
+  margin-left: -2%;
 }
 .specialty-wrapper {
   display: flex;
@@ -249,12 +252,29 @@ footer {
   padding: 0 5em 0 5em;
   font-family: sans-serif;
 }
+#specialties img,
+.specialty-wrapper img {
+  display: none;
+}
+#skillset {
+  width: 31vw;
+  height: auto;
+  margin-left: 34%;
+  margin-bottom: 5%;
+}
 @media (min-width: 576px) {
   #menu {
     margin: -100px 0 0 -80%;
   }
   .burger-container {
     margin-left: 80%;
+  }
+  #specialties img,
+  .specialty-wrapper img {
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    margin: 2%;
   }
 }
 @media (min-width: 768px) {
@@ -281,6 +301,24 @@ footer {
     justify-content: space-around;
     width: 80vw;
     margin-top: 30%;
+  }
+  .img-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "edu edu box" "work work box";
+    margin: 5%;
+  }
+  #work img,
+  #education img {
+    width: 50vw;
+    height: auto;
+    margin-top: 2%;
+  }
+  #skillset {
+    width: 15vw;
+    height: auto;
+    margin-left: 25%;
+    margin-bottom: 6%;
   }
 }
 @media (min-width: 1200px) {
